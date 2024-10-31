@@ -13,7 +13,7 @@
 
 
     <!-- Manual CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/global.css">
 
     <title>Login</title>
     
@@ -23,7 +23,7 @@
       <!-- Login Form -->
 
       <div class="container">
-        <form class="form-container">
+        <form class="form-container-login">
           <h3 class="textJudul mb-5 mt-2">Masuk</h3>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label  textForm">E-mail</label>
@@ -37,11 +37,11 @@
             <a href="#" class="textForm text-hover"><b>Lupa Password?</b></a>
           </div>
           <div class="d-grid mt-4">
-          <button type="submit" class="btn btn-warning textForm"><a href="index.html"
+          <button type="submit" class="btn btn-warning textForm"><a href="../index.php"
               class="textForm text-hover">Masuk</a></button>
           </div>   
           <div class>
-            <span class="textForm ">Belum punya akun? <a href="register.html" class="textForm text-hover"><b>Daftar </b></a> </span>
+            <span class="textForm ">Belum punya akun? <a href="register.php" class="textForm text-hover"><b>Daftar </b></a> </span>
           </div>
         </form> 
       </div>

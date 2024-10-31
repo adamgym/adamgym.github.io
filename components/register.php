@@ -11,7 +11,7 @@
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/global.css">
 
     <title>Daftar</title>
 
@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="container">
-      <form class="form-container">
+      <form class="form-container-register">
         <h3 class="textJudul">Daftar</h3>
         <div class="row">
           <div class="mb-3">
@@ -31,10 +31,10 @@
             <input type="password" class="form-control" id="exampleInputPassword1">
           </div>
           <div class="d-grid mt-5">
-           <button type="submit" class="btn btn-warning textForm"><a href="login.html" class="textForm text-hover">Daftar</a></button>
+           <button type="submit" class="btn btn-warning textForm"><a href="login.php" class="textForm text-hover">Daftar</a></button>
           </div>  
           <div class="mt-1">
-            <span class="textForm ">Sudah punya akun? <a href="login.html" class="textForm text-hover">Login</a> </span>
+            <span class="textForm ">Sudah punya akun? <a href="login.php" class="textForm text-hover"><b>Login</b></a> </span>
           </div> 
         </form>
     </div>

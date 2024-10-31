@@ -15,16 +15,15 @@
 
   <title>Calvary Store</title>
 
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/global.css">
 
 </head>
 
 <body>
-
   <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container d-flext justify-content-between">
-      <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="125" height="45"></a>
+      <a class="navbar-brand" href="index.php"><img src="assets/img/logo.png" width="125" height="45"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,7 +31,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html"> Home </a>
+            <a class="nav-link active" aria-current="page" href="index.php"> Home </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Kontak</a>
@@ -43,7 +42,7 @@
         <ul class="navbar-nav ms-auto">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="login.html">Masuk</a>
+              <a class="nav-link" href="components/login.php">Masuk</a>
             </li>
           </ul>
         </ul>
@@ -54,19 +53,18 @@
 
   <!-- Carousel -->
 
-
   <div class="container">
     <div class="container">
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="5000">
-            <img src="img/slide1.png" class="slide d-block w-100" alt="...">
+            <img src="assets/img/slide1.png" class="slide d-block w-100" alt="...">
           </div>
           <div class="carousel-item" data-bs-interval="4000">
-            <img src="img/slide2.png" class="slide d-block w-100" alt="...">
+            <img src="assets/img/slide2.png" class="slide d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/slide3.png" class="slide d-block w-100" alt="...">
+            <img src="assets/img/slide3.png" class="slide d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -92,7 +90,7 @@
         <div class="col-lg-3 hovered-card">
           <div class="card">
             <a href="#">
-              <img src="img/jokiconqu.png" class="list card-img-top" alt="...">
+              <img src="assets/img/jokiconqu.png" class="list card-img-top" alt="...">
             </a>
             <div class="card-body">
               <h5 class="card-title text-center"><strong>JOKI CONQUEROR</strong></h5>
@@ -102,7 +100,7 @@
         <div class="col-lg-3 hovered-card">
           <div class="card">
             <a href="#">
-              <img src="img/jokirank.png" class="list card-img-top" alt="...">
+              <img src="assets/img/jokirank.png" class="list card-img-top" alt="...">
             </a>
             <div class="card-body">
               <h5 class="card-title text-center"><strong>JOKI RANK</strong></h5>
@@ -112,7 +110,7 @@
         <div class="col-lg-3 hovered-card">
           <div class="card">
             <a href="#">
-              <img src="img/jokikd.png" class="list card-img-top" alt="...">
+              <img src="assets/img/jokikd.png" class="list card-img-top" alt="...">
             </a>
             <div class="card-body">
               <h5 class="card-title text-center"><strong>JOKI KD</strong></h5>
@@ -122,7 +120,7 @@
         <div class="col-lg-3 hovered-card">
           <div class="card">
             <a href="#">
-              <img src="img/jokirp.png" class="list card-img-top" alt="...">
+              <img src="assets/img/jokirp.png" class="list card-img-top" alt="...">
             </a>
             <div class="card-body">
               <h5 class="card-title text-center"><strong>JOKI ROYALE PASS</strong></h5>
@@ -139,8 +137,8 @@
       <div class="row">
         <div class="col-lg-3 hovered-card">
           <div class="card">
-            <a href="listpubgindo.html">
-              <img src="img/logopubg.png" class="list card-img-top" alt="...">
+            <a href="components/listpubgindo.php">
+              <img src="assets/img/logopubg.png" class="list card-img-top" alt="...">
             </a>
             <div class="card-body">
               <h5 class="card-title text-center"><strong>UC PUBGM</strong></h5>
@@ -150,7 +148,7 @@
         <div class="col-lg-3 hovered-card">
           <div class="card">
             <a href="#">
-              <img src="img/valorant.png" class="list card-img-top" alt="...">
+              <img src="assets/img/valorant.png" class="list card-img-top" alt="...">
             </a>
             <div class="card-body">
               <h5 class="card-title text-center"><strong>VALORANT</strong></h5>
@@ -160,7 +158,7 @@
         <div class="col-lg-3 hovered-card">
           <div class="card">
             <a href="#">
-              <img src="img/ff.png" class="list card-img-top" alt="...">
+              <img src="assets/img/ff.png" class="list card-img-top" alt="...">
             </a>
             <div class="card-body">
               <h5 class="card-title text-center"><strong>FREE FIRE</strong></h5>
@@ -170,7 +168,7 @@
         <div class="col-lg-3 hovered-card">
           <div class="card">
             <a href="#">
-              <img src="img/ml1.png" class="list card-img-top" alt="...">
+              <img src="assets/img/ml1.png" class="list card-img-top" alt="...">
             </a>
             <div class="card-body">
               <h5 class="card-title text-center"><strong>MOBILE LEGENDS</strong></h5>
@@ -188,7 +186,7 @@
         <div class="col-lg-3 hovered-card">
           <div class="card">
             <a href="#">
-              <img src="img/netflix.png" class="list card-img-top" alt="...">
+              <img src="assets/img/netflix.png" class="list card-img-top" alt="...">
             </a>
             <div class="card-body">
               <h5 class="card-title text-center"><strong>NETFLIX</strong></h5>
@@ -198,7 +196,7 @@
         <div class="col-lg-3 hovered-card">
           <div class="card">
             <a href="#">
-              <img src="img/iflix.png" class="list card-img-top" alt="...">
+              <img src="assets/img/iflix.png" class="list card-img-top" alt="...">
             </a>
             <div class="card-body">
               <h5 class="card-title text-center"><strong>IFLIX</strong></h5>
@@ -208,7 +206,7 @@
         <div class="col-lg-3 hovered-card">
           <div class="card">
             <a href="#">
-              <img src="img/wetv.png" class="list card-img-top" alt="...">
+              <img src="assets/img/wetv.png" class="list card-img-top" alt="...">
             </a>
             <div class="card-body">
               <h5 class="card-title text-center"><strong>WE TV</strong></h5>
@@ -218,7 +216,7 @@
         <div class="col-lg-3 hovered-card">
           <div class="card">
             <a href="#">
-              <img src="img/ytprem.png" class="list card-img-top" alt="...">
+              <img src="assets/img/ytprem.png" class="list card-img-top" alt="...">
             </a>
             <div class="card-body">
               <h5 class="card-title text-center"><strong>YOUTUBE PREMIUM</strong></h5>
@@ -228,7 +226,7 @@
         <div class="col-lg-3 hovered-card">
           <div class="card">
             <a href="#">
-              <img src="img/disney.png" class="list card-img-top" alt="...">
+              <img src="assets/img/disney.png" class="list card-img-top" alt="...">
             </a>
             <div class="card-body">
               <h5 class="card-title text-center"><strong>DISNEY+ HOTSTAR</strong></h5>
@@ -238,7 +236,7 @@
         <div class="col-lg-3 hovered-card">
           <div class="card">
             <a href="#">
-              <img src="img/Vidio.png" class="list card-img-top" alt="...">
+              <img src="assets/img/Vidio.png" class="list card-img-top" alt="...">
             </a>
             <div class="card-body">
               <h5 class="card-title text-center"><strong>VIDIO</strong></h5>
@@ -248,7 +246,7 @@
         <div class="col-lg-3 hovered-card">
           <div class="card">
             <a href="#">
-              <img src="img/spotify.png" class="list card-img-top" alt="...">
+              <img src="assets/img/spotify.png" class="list card-img-top" alt="...">
             </a>
             <div class="card-body">
               <h5 class="card-title text-center"><strong>SPOTIFY PREMIUM</strong></h5>
@@ -258,7 +256,7 @@
         <div class="col-lg-3 hovered-card">
           <div class="card">
             <a href="#">
-              <img src="img/canva.png" class="list card-img-top" alt="...">
+              <img src="assets/img/canva.png" class="list card-img-top" alt="...">
             </a>
             <div class="card-body">
               <h5 class="card-title text-center"><strong>CANVA PRO</strong></h5>
