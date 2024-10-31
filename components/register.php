@@ -1,3 +1,33 @@
+<?php
+
+    include "../service/connection.php";
+    session_start();
+
+
+    $register_message = "";
+
+    if (isset($_SESSION["is_login"])){
+        header("location: ../index.php");
+    }
+
+    if(isset($_POST['register'])){
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        $sql = "INSERT INTO users (email, password) VALUES 
+        ('$email', '$password')";
+
+        if ($db->query($sql)) {
+            $register_message = "daftar berhasil, silahkan login";
+
+        } else {
+            $register_message = "daftar gagal, coba lagi";
+        }
+
+    }
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,20 +48,21 @@
      
   </head>
   <body>
+  <p><i><?= $register_message ?></i></p>
     <div class="container">
-      <form class="form-container-register">
+      <form class="form-container-register" action="register.php" method="POST">
         <h3 class="textJudul">Daftar</h3>
         <div class="row">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name = "email">
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="password" class="form-control" id="exampleInputPassword1" name = "password">
           </div>
           <div class="d-grid mt-5">
-           <button type="submit" class="btn btn-warning textForm"><a href="login.php" class="textForm text-hover">Daftar</a></button>
+           <button type="submit" class="btn btn-warning textForm text-hover" name = "register">Daftar</button>
           </div>  
           <div class="mt-1">
             <span class="textForm ">Sudah punya akun? <a href="login.php" class="textForm text-hover"><b>Login</b></a> </span>

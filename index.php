@@ -1,3 +1,16 @@
+<?php
+
+    session_start();
+
+    $logout_message = "";
+
+    if (isset($_POST['logout'])){
+        session_unset();
+        session_destroy();
+        header('location: components/login.php');
+    }
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -43,6 +56,9 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="components/login.php">Masuk</a>
+              <form action="index.php" method="POST" style = "display: inline;">
+                <button class="nav-link btn btn-link text-decoration-none text-white" type="submit" name = "logout">logout</button>
+              </form>
             </li>
           </ul>
         </ul>
