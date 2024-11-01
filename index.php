@@ -1,14 +1,14 @@
 <?php
 
-    session_start();
+session_start();
 
-    $logout_message = "";
+$logout_message = "";
 
-    if (isset($_POST['logout'])){
-        session_unset();
-        session_destroy();
-        header('location: components/login.php');
-    }
+if (isset($_POST['logout'])) {
+  session_unset();
+  session_destroy();
+  header('location: components/login.php');
+}
 ?>
 
 <!doctype html>
@@ -56,8 +56,8 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="components/login.php">Masuk</a>
-              <form action="index.php" method="POST" style = "display: inline;">
-                <button class="nav-link btn btn-link text-decoration-none text-white" type="submit" name = "logout">logout</button>
+              <form action="index.php" method="POST" style="display: inline;">
+                <button class="nav-link btn btn-link text-decoration-none text-white" type="submit" name="logout">logout</button>
               </form>
             </li>
           </ul>
@@ -69,7 +69,7 @@
 
   <!-- Carousel -->
 
-  <div class="container">
+  <div class="container mt-3">
     <div class="container">
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
